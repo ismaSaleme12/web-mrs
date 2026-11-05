@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MrsEmbutidos: chorizos artesanales elaborados en Malargüe, Mendoza. Frescos, seguros y con sabor a hogar."
+    />
+    <title>MrsEmbutidos — chorizos artesanales de Malargüe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Ir al contenido</a>
+
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="MrsEmbutidos, inicio">
+        <span class="brand-mark">M</span>
+        <span><strong>Mrs</strong><em>Embutidos</em></span>
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal">
+        <span class="sr-only">Abrir menú</span>
+        <span></span><span></span>
+      </button>
+
+      <nav id="menu-principal" class="main-nav" aria-label="Navegación principal">
+        <a href="#variedades">Variedades</a>
+        <a href="#origen">Nuestro hacer</a>
+        <a href="#pedido">Hacé tu pedido</a>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section id="inicio" class="hero" aria-labelledby="hero-title">
+        <div class="hero-image" role="img" aria-label="Chorizos artesanales frescos sobre una tabla de madera"></div>
+        <div class="hero-content">
+          <p class="place">Malargüe, Mendoza</p>
+          <h1 id="hero-title">Chorizos hechos con tiempo, como en casa.</h1>
+          <p class="hero-copy">
+            Embutidos artesanales, frescos y seguros. Una receta de familia para compartir alrededor de la mesa.
+          </p>
+          <a class="button button--warm" href="#variedades">Conocé las variedades</a>
+        </div>
+        <p class="hero-caption">Elaboración artesanal · Producción local</p>
+      </section>
+
+      <section class="promise" aria-label="Nuestra promesa">
+        <p>Carne seleccionada</p>
+        <p>Controles de higiene</p>
+        <p>Frescura de cada tanda</p>
+      </section>
+
+      <section id="variedades" class="varieties section-wrap" aria-labelledby="varieties-title">
+        <div class="section-heading">
+          <p class="section-kicker">Para la parrilla, para el disco, para la mesa</p>
+          <h2 id="varieties-title">Nuestras variedades</h2>
+          <p>
+            Esta selección es una primera muestra para la web. Podemos actualizar los nombres, ingredientes y disponibilidad con tus variedades reales.
+          </p>
+        </div>
+
+        <div class="variety-list">
+          <article class="variety-card variety-card--classic">
+            <div class="variety-index">01</div>
+            <div>
+              <h3>Chorizo Clasico</h3>
+              <p>El chorizo de todos los domingos: jugoso, equilibrado y con el sabor que reúne.</p>
+            </div>
+            <span>Puro Cerdo</span>
+          </article>
+          <article class="variety-card variety-card--herbs">
+            <div class="variety-index">02</div>
+            <div>
+              <h3>Chorizo Ahumado</h3>
+              <p>Un perfil fresco y aromático para quienes disfrutan descubrir un poco más en cada bocado.</p>
+            </div>
+            <span>Puro Cerdo</span>
+          </article>
+          <article class="variety-card variety-card--spicy">
+            <div class="variety-index">03</div>
+            <div>
+              <h3>Chorizo con Cheddar y Morrones</h3>
+              <p>El toque justo de especias para levantar la parrilla sin tapar el sabor de la carne.</p>
+            </div>
+            <span>Especiales</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="origen" class="craft" aria-labelledby="craft-title">
+        <div class="craft-copy">
+          <p class="section-kicker">El sabor tiene historia</p>
+          <h2 id="craft-title">Una elaboración cuidada desde el primer paso.</h2>
+          <p>
+            En MrsEmbutidos trabajamos en tandas pequeñas, con ingredientes seleccionados y controles de higiene en cada etapa. Porque lo artesanal también puede ser responsable y consistente.
+          </p>
+          <a class="text-link" href="#pedido">Consultanos por tu pedido <span aria-hidden="true">↘</span></a>
+        </div>
+        <ol class="craft-steps">
+          <li><strong>Elegimos</strong><span>Ingredientes frescos y proveedores de confianza.</span></li>
+          <li><strong>Elaboramos</strong><span>Recetas familiares, trabajo manual y cuidado diario.</span></li>
+          <li><strong>Entregamos</strong><span>Producto fresco, listo para disfrutar.</span></li>
+        </ol>
+      </section>
+
+      <section class="quote-band" aria-label="Filosofía de MrsEmbutidos">
+        <p>“Que cada chorizo llegue a la mesa con gusto a hogar.”</p>
+      </section>
+
+      <section id="pedido" class="order section-wrap" aria-labelledby="order-title">
+        <div class="order-intro">
+          <p class="section-kicker">Pedidos y consultas</p>
+          <h2 id="order-title">Hablemos de tu próxima parrilla.</h2>
+          <p>Contanos qué variedad buscás y para cuántas personas. Te respondemos con disponibilidad y opciones de entrega en Malargüe.</p>
+          <p class="location">Malargüe · Mendoza · Argentina</p>
+        </div>
+
+        <form class="order-form" id="contact-form">
+          <label>
+            Tu nombre
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            Tu WhatsApp o correo
+            <input type="text" name="contact" autocomplete="tel" required />
+          </label>
+          <label>
+            ¿Qué te gustaría pedir?
+            <select name="variety">
+              <option value="">Elegí una variedad</option>
+              <option>Chorizo Clasico</option>
+              <option>Con hierbas</option>
+              <option>Picante suave</option>
+              <option>Quiero consultar otras opciones</option>
+            </select>
+          </label>
+          <button class="button button--dark" type="submit">Enviar consulta</button>
+          <p class="form-note" id="form-note" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand--footer" href="#inicio"><span class="brand-mark">M</span><span><strong>Mrs</strong><em>Embutidos</em></span></a>
+      <p>Chorizos artesanales hechos en Malargüe.</p>
+      <p class="footer-small">© <span id="year"></span> MrsEmbutidos</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
